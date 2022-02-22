@@ -76,7 +76,7 @@ ex) [DemoController.java](https://github.com/xmflr95/springboot-elkstack/blob/ma
 ## Filebeat 설정
 filebeat.yml 파일에서 로그 데이터를 어떻게 전송할지 설정한다.
 읽어올 로그 파일들의 경로 등 설정, 키바나, 엘라스틱서치, logstash 연결 설정 등 본인의 입맛에 맛도록 설정 가능한듯 하다.
-헤매던 부분인 멀티라인 부분만 아래에 기록하기로합니다.  
+헤매던 부분인 멀티라인 부분만 아래에 기록하겠습니다.  
 > filebeat.yml  
 
 ```yml
@@ -133,7 +133,7 @@ logstash의 경우 filter 설정에서 애를 먹었습니다.
   }
  }
 ```
-yml 설정파일에서 gork.match 부분에서 message 값은 본인의 스프링 부트 logback 설정파일에서 내보내는 log파일 패턴에 맞도록 수정해주어야 정상 동작합니다.
+yml 설정파일에서 g.match 부분에서 message 값은 본인의 스프링 부트 logback 설정파일에서 내보내는 log파일 패턴에 맞도록 수정해주어야 정상 동작합니다.
 
 ## Elasticsearch, kibana 설정
 elasticsearch의 경우 크게 설정할 부분은 없었고 kibana의 경우 elasticsearch와 연동하기 위해 설정파일에 URL 설정이 필요했습니다.
