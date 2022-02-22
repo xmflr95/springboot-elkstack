@@ -133,7 +133,7 @@ logstash의 경우 filter 설정에서 애를 먹었습니다.
   }
  }
 ```
-yml 설정파일에서 g.match 부분에서 message 값은 본인의 스프링 부트 logback 설정파일에서 내보내는 log파일 패턴에 맞도록 수정해주어야 정상 동작합니다.
+yml 설정파일에서 grok.match 부분에서 message 값은 본인의 스프링 부트 logback 설정파일에서 내보내는 log파일 패턴에 맞도록 수정해주어야 정상 동작합니다.
 
 ## Elasticsearch, kibana 설정
 elasticsearch의 경우 크게 설정할 부분은 없었고 kibana의 경우 elasticsearch와 연동하기 위해 설정파일에 URL 설정이 필요했습니다.
